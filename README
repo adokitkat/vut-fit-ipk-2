@@ -1,0 +1,23 @@
+Varianta ZETA
+Sniffer paketov
+
+Autor: Adam Múdry (xmudry01)
+
+Úlohou tohto projektu bolo naprogramovať zachytávač TCP a UDP paketov, ktorý má možnosť filtrovať zachytené pakety -- určiť sledovaný port, sledovaný protokol a počet zachytených paketov.
+Zachytené pakety sú vypisované na štandardný výstup (STDOUT).
+
+Spustenie programu:
+./ipk-sniffer -i rozhranie [-p port] [--tcp|-t] [--udp|-u] [-n num]
+
+Príklady volania:
+./ipk-sniffer -i eth0 -p 23 --tcp -n 2
+./ipk-sniffer -i eth0 --udp
+./ipk-sniffer -i eth0
+
+Zoznam odovzdaných súborov:
+src/main.cpp
+Makefile
+manual.pdf
+README
+
+IPv6 nepodporované.
